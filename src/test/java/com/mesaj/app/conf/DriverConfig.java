@@ -14,11 +14,9 @@ import java.time.Duration;
 
 @Configuration
 @ComponentScan(basePackages = "com.mesaj.app")
-@PropertySource("classpath:/application.properties")
+@PropertySource("classpath:/application-${environment:dev}.properties")
 public class DriverConfig {
 
-    //TODO crear doS aarchivos diferentes y en cada uno especificar un browser dierente y pasar la variable por linea de comando
-    // modificar esto @PropertySource("classpath:/application.properties")
     @Value("${driver.type}")
     private Browser driverType;
 
