@@ -1,47 +1,41 @@
 package com.mesaj.app.stepdefinitions;
 
+import com.mesaj.app.builders.data.UserBuilder;
 import com.mesaj.app.conf.DriverConfig;
-import com.mesaj.app.pageobjects.SignUpServices;
-import com.mesaj.app.util.RandomNumberGenerator;
+import com.mesaj.app.tasks.NavigateTo;
+import com.mesaj.app.tasks.UserSignUp;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 
 @ContextConfiguration(classes = {DriverConfig.class})
 public class SignUpStepDefs {
 
     @Autowired
-    private SignUpServices signUp;
+    private UserSignUp signUp;
 
-    @Value("${url}")
-    private String url;
+    @Autowired
+    private NavigateTo navigate;
 
     @Given("^Pepito wants to have an account$")
-    public void pepito_wants_to_have_an_account() throws InterruptedException {
-
-        signUp.go(url);
-        signUp.writeFirstName("Pepito");
-        signUp.writeLastName("Perez");
-        signUp.writeEmail("Perez@gmail.com");
-        signUp.selectMale();
-        signUp.selectCountry("Colombia");
-        signUp.selectBirthDay("10");
-        signUp.selectBirthMonth("February");
-        signUp.selectBirthYear("1989");
-        signUp.writePhone(RandomNumberGenerator.get());
-        signUp.writePassword("A_x?a1989");
-        signUp.writeConfirmPassword("A_x?a1989");
-
-        signUp.clickOnSubmit();
-
-        Thread.sleep(8000);
+    public void pepito_wants_to_have_an_account() {
+        navigate.signUpPage();
     }
 
     @When("^he sends required information to get the account$")
-    public void he_sends_required_information_to_get_the_account() {
+    public void he_sends_required_information_to_get_the_account() throws InterruptedException {
+
+        signUp.withInfo(
+                UserBuilder
+                        .anUser()
+                        .but()
+                        .withoutBirthDay()
+                        .withoutEmail()
+                        .build()
+        );
+        
     }
 
     @Then("^he should be told that the account was created$")
