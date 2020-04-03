@@ -1,6 +1,5 @@
 package com.mesaj.app.tasks;
 
-import com.mesaj.app.enums.Gender;
 import com.mesaj.app.models.User;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomNumberGenerator;
@@ -18,13 +17,7 @@ public class UserSignUp {
         signUp.writeFirstName(user.getFirstName());
         signUp.writeLastName(user.getLastName());
         signUp.writeEmail(user.getEmail());
-
-        if (user.getGender() == Gender.female) {
-            signUp.selectFemale();
-        } else {
-            signUp.selectMale();
-        }
-
+        signUp.selectGender(user.getGender());
         signUp.selectCountry(user.getCountry());
         signUp.selectBirthDay(user.getBirthDay());
         signUp.selectBirthMonth(user.getBirthMonth());
@@ -32,8 +25,6 @@ public class UserSignUp {
         signUp.writePhone(RandomNumberGenerator.get());
         signUp.writePassword(user.getPassword());
         signUp.writeConfirmPassword(user.getPasswordConfirmation());
-
         //signUp.clickOnSubmit();
     }
-
 }
