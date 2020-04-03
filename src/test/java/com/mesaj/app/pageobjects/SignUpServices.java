@@ -1,7 +1,9 @@
 package com.mesaj.app.pageobjects;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,19 +13,19 @@ public class SignUpServices {
     @Autowired
     private SignUpPageObject signUpPageObject;
 
-    private  WebDriver driver;
+    @Autowired
+    private WebDriver driver;
 
     @Autowired
-    public SignUpServices(WebDriver driver) {
-        this.driver = driver;
-    }
+    WebDriverWait wait;
 
     public void go(String url) {
         this.driver.get(url);
     }
 
-    public void writeFirstName(String firstname) {
-        this.signUpPageObject.getFirstNameTextbox().sendKeys(firstname);
+    public void writeFirstName(String firstName) {
+        this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getFirstNameTextbox()));
+        this.signUpPageObject.getFirstNameTextbox().sendKeys(firstName);
     }
 
     public void writeLastName(String lastName) {
