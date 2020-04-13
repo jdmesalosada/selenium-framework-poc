@@ -24,7 +24,7 @@ public class SignUpStepDefs {
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account() throws InterruptedException {
         navigate.signUpPage();
-        Thread.sleep(7000);
+        Thread.sleep(4000);
     }
 
     @When("^he sends required information to get the account$")

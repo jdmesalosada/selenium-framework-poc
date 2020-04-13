@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 53.143 sec <<< FAILURE!
+client sign up failed(Client sign up)  Time elapsed: 8.829 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:11)
+
+client sign up failed 2(Client sign up)  Time elapsed: 6.71 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:21)
+

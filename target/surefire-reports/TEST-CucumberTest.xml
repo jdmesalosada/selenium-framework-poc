@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="2" name="CucumberTest" time="48.814" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.162-b12"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/julianmesa/Documents/projects/selenium-framework-poc"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/julianmesa/Documents/projects/selenium-framework-poc"/>
+    <property name="java.runtime.version" value="1.8.0_162-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/yl/9_2mfwd16jqdgqplczbnz12w0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/julianmesa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.3/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.3"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.3/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/julianmesa"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="julianmesa"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_162"/>
+    <property name="java.ext.dirs" value="/Users/julianmesa/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Client sign up" name="client sign up successfully" time="26.703"/>
+  <testcase classname="Client sign up" name="client sign up failed" time="8.829">
+    <failure message="expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:11)
+</failure>
+    <system-out>
+Scenario: client sign up failed                           &amp;#27;[90m# src/test/resources/features/signup.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mPepito wants to have an account&amp;#27;[0m                   &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.pepito_wants_to_have_an_account()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mhe sends required information to get the account&amp;#27;[0m   &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.he_sends_required_information_to_get_the_account()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mhe should be told that the account was not created&amp;#27;[0m &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created()&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:11)
+&amp;#27;[0m
+
+    Embedding 986ab44d-eef7-4bdb-b89d-69734150057c [image/png 104962 bytes]
+
+</system-out>
+    <system-err>Apr 13, 2020 10:49:16 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Apr 13, 2020 10:49:16 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a00b15d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@36ef1d65, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4be0a27d]
+Apr 13, 2020 10:49:16 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFO: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@6003ad65] to [io.cucumber.spring.GlueCodeScope@2ec99035]
+[1586767756.564][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="Client sign up" name="client sign up successfully 2" time="6.572"/>
+  <testcase classname="Client sign up" name="client sign up failed 2" time="6.71">
+    <failure message="expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:21)
+</failure>
+    <system-out>
+Scenario: client sign up failed 2                         &amp;#27;[90m# src/test/resources/features/signup.feature:18&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mPepito wants to have an account&amp;#27;[0m                   &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.pepito_wants_to_have_an_account()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mhe sends required information to get the account&amp;#27;[0m   &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.he_sends_required_information_to_get_the_account()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mhe should be told that the account was not created&amp;#27;[0m &amp;#27;[90m# com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created()&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.he_should_be_told_that_the_account_was_not_created(SignUpStepDefs.java:50)
+	at ✽.he should be told that the account was not created(file:///Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/features/signup.feature:21)
+&amp;#27;[0m
+
+    Embedding 8c0a9a0f-191b-4a79-81be-c7abd23bd567 [image/png 104577 bytes]
+
+</system-out>
+    <system-err>Apr 13, 2020 10:49:31 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Apr 13, 2020 10:49:31 AM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26d5a317, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@70b6db83, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5a090f62]
+Apr 13, 2020 10:49:31 AM org.springframework.beans.factory.support.DefaultListableBeanFactory registerScope
+INFO: Replacing scope &apos;cucumber-glue&apos; from [io.cucumber.spring.GlueCodeScope@32227215] to [io.cucumber.spring.GlueCodeScope@5edc3e29]
+</system-err>
+  </testcase>
+</testsuite>
