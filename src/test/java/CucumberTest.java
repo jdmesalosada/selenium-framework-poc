@@ -20,7 +20,6 @@ import org.junit.runner.RunWith;
                 //"junit:target/cucumber-reports/Cucumber.xml",
                 //"html:target/cucumber-reports"
         }
-
 )
 public class CucumberTest {
 }

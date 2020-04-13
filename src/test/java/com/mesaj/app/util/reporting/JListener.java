@@ -37,7 +37,6 @@ public class JListener implements ConcurrentEventListener {
     }
 
 
-
     @Override
     public void setEventPublisher(EventPublisher eventPublisher) {
         eventPublisher.registerHandlerFor(TestCaseStarted.class, this::onTestCaseStarted);
