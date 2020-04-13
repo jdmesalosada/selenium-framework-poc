@@ -47,5 +47,4 @@ public class PhotographerHook {
             System.out.println("There was an error taking the screenshot: " + wde.getMessage());
         }
     }
-
 }
