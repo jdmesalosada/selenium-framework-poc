@@ -26,7 +26,7 @@ public class DriverFactory {
     public WebDriver get(Browser browser) throws MalformedURLException {
 
         if (remoteExecution)
-            getRemoteWebDriver(browser);
+            return getRemoteWebDriver(browser);
 
         if (Browser.chrome == browser) {
             System.setProperty("webdriver.chrome.driver", String.format(pathFormat, "chromedriver"));
@@ -46,7 +46,7 @@ public class DriverFactory {
         capabilities.setBrowserName(browser.name());
 
         capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
+        capabilities.setCapability("enableVideo", true);
 
         return new RemoteWebDriver(URI.create(gridUrl).toURL(), capabilities);
     }
