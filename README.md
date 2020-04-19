@@ -6,6 +6,9 @@ Example of a mini-framework to execute automated tests using Selenium, Spring, C
 `mvn clean test -Denvironment=prod
 `
 
+`mvn clean test -Denvironment=prod
+`
+
 ```
 version: '3'
 
