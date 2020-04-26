@@ -28,7 +28,7 @@ public class DriverConfig {
     @Autowired
     private DriverFactory driverFactory;
 
-    @Bean
+    @Bean(destroyMethod = "quit")
     public WebDriver webDriver() throws MalformedURLException {
         return driverFactory.get(driverType);
     }
