@@ -12,7 +12,6 @@ import org.springframework.test.context.ContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@ContextConfiguration(classes = {DriverConfig.class})
 public class SignUpStepDefs {
 
     @Autowired
