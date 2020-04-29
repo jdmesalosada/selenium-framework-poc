@@ -4,9 +4,11 @@ import com.mesaj.app.models.User;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomNumberGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("cucumber-glue")
 public class UserSignUp {
 
     @Autowired
