@@ -1,16 +1,12 @@
 package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.builders.data.UserBuilder;
-import com.mesaj.app.conf.DriverConfig;
-import com.mesaj.app.database.User;
-import com.mesaj.app.database.UserRepository;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -22,20 +18,10 @@ public class SignUpStepDefs {
     @Autowired
     private NavigateTo navigate;
 
-    @Autowired
-    UserRepository userRepository;
-
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account() throws InterruptedException {
-      //  navigate.signUpPage();
-     //   Thread.sleep(4000);
-
-        User user = new User();
-        user.setEmail("nuevoregistro@gmail.com");
-        user.setName("el nuevo");
-
-        userRepository.save(user);
-
+        navigate.signUpPage();
+        Thread.sleep(4000);
     }
 
     @When("^he sends required information to get the account$")
