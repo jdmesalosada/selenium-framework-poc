@@ -7,9 +7,10 @@ import java.util.List;
 
 public class GetAllUsersToSignUp {
 
+
     public static List<User> fromDataSource() throws Exception {
         ConvertExcelSheet convertExcelSheet =
-                new ConvertExcelSheet("/Users/julianmesa/Documents/projects/selenium-framework-poc/src/test/resources/data/data.xlsx", "logindata");
+                new ConvertExcelSheet(System.getProperty("user.dir") + "/src/test/resources/data/data.xlsx", "logindata");
 
         return convertExcelSheet.to(User.class);
     }
