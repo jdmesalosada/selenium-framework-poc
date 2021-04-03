@@ -1,8 +1,6 @@
 package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.builders.data.UserBuilder;
-import com.mesaj.app.models.User;
-import com.mesaj.app.questions.GetUserToSignUpBy;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
@@ -39,15 +37,6 @@ public class SignUpStepDefs {
         );
     }
 
-    @When("^he sends required information to get the account as an (.*)$")
-    public void sends_required_information_as_an(String profile) throws Exception {
-
-        User userToSignUp = GetUserToSignUpBy.profile(profile);
-
-        signUp.withInfo(
-                userToSignUp
-        );
-    }
 
     @Then("^he should be told that the account was created$")
     public void he_should_be_told_that_the_account_was_created() {
