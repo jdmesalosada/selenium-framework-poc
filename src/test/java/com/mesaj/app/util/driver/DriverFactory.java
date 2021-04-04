@@ -1,6 +1,7 @@
 package com.mesaj.app.util.driver;
 
 import com.mesaj.app.enums.Browser;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,12 +30,12 @@ public class DriverFactory {
             return getRemoteWebDriver(browser);
 
         if (Browser.chrome == browser) {
-            System.setProperty("webdriver.chrome.driver", String.format(pathFormat, "chromedriver"));
+            WebDriverManager.chromedriver().setup();
             return new ChromeDriver();
         }
 
         if (Browser.firefox == browser) {
-            System.setProperty("webdriver.gecko.driver", String.format(pathFormat, "geckodriver"));
+            WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         }
 
