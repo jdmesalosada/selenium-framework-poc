@@ -2,9 +2,9 @@
 Example of a mini-framework to execute automated tests using Selenium, Spring, Cucumber.
 
 
-#### course
+#### Udemy course
 
-https://www.youtube.com/playlist?list=PLeo6Q1inqlOcHb8suOgHzQ8MFeqgeAQ6Z
+https://www.udemy.com/course/curso-creacion-framework-con-selenium-spring-y-cucumber/?referralCode=B1820570128B89CDF98D
 
 #### Run the tests
 
