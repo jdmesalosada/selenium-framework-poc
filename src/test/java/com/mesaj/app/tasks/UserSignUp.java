@@ -3,12 +3,13 @@ package com.mesaj.app.tasks;
 import com.mesaj.app.models.User;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomNumberGenerator;
+import io.cucumber.spring.ScenarioScope;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("cucumber-glue")
+@ScenarioScope
 public class UserSignUp {
 
     @Autowired

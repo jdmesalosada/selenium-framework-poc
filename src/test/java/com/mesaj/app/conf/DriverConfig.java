@@ -2,7 +2,9 @@ package com.mesaj.app.conf;
 
 import com.mesaj.app.enums.Browser;
 import com.mesaj.app.util.driver.DriverFactory;
+import io.cucumber.spring.ScenarioScope;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,10 +25,18 @@ public class DriverConfig {
     @Autowired
     private DriverFactory driverFactory;
 
-    @Scope("cucumber-glue")
+    /*@ScenarioScope
     @Bean(destroyMethod = "quit")
     public WebDriver webDriver() throws MalformedURLException {
         return driverFactory.get(driverType);
+    }*/
+
+    @Bean
+    //@Scope("cucumber-glue")
+    @ScenarioScope
+    public WebDriver webDriver() {
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/mac/chromedriver");
+        return new ChromeDriver();
     }
 
     @Bean

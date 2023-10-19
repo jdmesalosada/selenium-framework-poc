@@ -1,14 +1,16 @@
 package com.mesaj.app.stepdefinitions;
 
-import com.mesaj.app.database.User;
+/*import com.mesaj.app.database.User;
 import com.mesaj.app.database.UserRepository;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.spring.ScenarioScope;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;
 
+@ScenarioScope
 public class DatabaseStepDefs {
 
     @Autowired
@@ -34,3 +36,5 @@ public class DatabaseStepDefs {
 
     }
 }
+*/
+

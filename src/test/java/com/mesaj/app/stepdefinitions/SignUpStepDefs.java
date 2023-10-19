@@ -8,10 +8,11 @@ import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.spring.ScenarioScope;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+@ScenarioScope
 public class SignUpStepDefs {
 
     @Autowired

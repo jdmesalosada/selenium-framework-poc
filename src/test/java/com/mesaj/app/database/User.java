@@ -1,5 +1,5 @@
 package com.mesaj.app.database;
-
+/*
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -17,4 +17,4 @@ public class User {
     private String name;
 
     private String email;
-}
+}*/

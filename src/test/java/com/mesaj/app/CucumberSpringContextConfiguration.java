@@ -13,7 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 @SpringBootTest
 @CucumberContextConfiguration
-@ContextConfiguration(classes = {TestConfig.class, StartApplication.class}, loader = SpringBootContextLoader.class)
+@ContextConfiguration(classes = {TestConfig.class, SpringSeleniumApplication.class}, loader = SpringBootContextLoader.class)
 //@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class CucumberSpringContextConfiguration {
 

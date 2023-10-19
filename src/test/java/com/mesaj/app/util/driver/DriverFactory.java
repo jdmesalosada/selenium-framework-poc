@@ -1,6 +1,7 @@
 package com.mesaj.app.util.driver;
 
 import com.mesaj.app.enums.Browser;
+import io.cucumber.spring.ScenarioScope;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,11 +9,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.net.MalformedURLException;
 import java.net.URI;
-
+@ScenarioScope
 @Component
 public class DriverFactory {
 

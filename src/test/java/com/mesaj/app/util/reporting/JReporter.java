@@ -1,5 +1,5 @@
 package com.mesaj.app.util.reporting;
-
+/*
 import io.cucumber.plugin.ConcurrentEventListener;
 import io.cucumber.plugin.event.*;
 import io.restassured.RestAssured;
@@ -31,6 +31,6 @@ public class JReporter implements ConcurrentEventListener {
     public void setEventPublisher(EventPublisher publisher) {
         publisher.registerHandlerFor(TestCaseFinished.class, this::onTestCaseFinished);
     }
-}
+}*/
 
 

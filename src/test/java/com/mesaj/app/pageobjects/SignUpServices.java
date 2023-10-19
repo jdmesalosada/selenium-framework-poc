@@ -1,6 +1,7 @@
 package com.mesaj.app.pageobjects;
 
 import com.mesaj.app.enums.Gender;
+import io.cucumber.spring.ScenarioScope;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -10,7 +11,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("cucumber-glue")
+@ScenarioScope
 public class SignUpServices {
 
     @Autowired

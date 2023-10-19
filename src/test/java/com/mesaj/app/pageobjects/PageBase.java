@@ -1,12 +1,13 @@
 package com.mesaj.app.pageobjects;
 
+import io.cucumber.spring.ScenarioScope;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Scope("cucumber-glue")
+@ScenarioScope
 @Component
 public class PageBase {
 
