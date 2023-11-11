@@ -1,5 +1,7 @@
 package com.jmconsultant.testautomation.seleniumframeworkpoc.conf;
 
+import com.jmconsultant.testautomation.seleniumframeworkpoc.enums.Browser;
+import com.jmconsultant.testautomation.seleniumframeworkpoc.util.driver.DriverFactory;
 import io.cucumber.spring.ScenarioScope;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -10,13 +12,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
 
-
 @Configuration
 public class DriverConfig {
-    @Bean
+
+    @Autowired
+    private DriverFactory driverFactory;
+
+    @Value("${browser}")
+    private Browser browser;
+
+    @Bean(destroyMethod = "quit")
     @ScenarioScope
     public WebDriver webDriver() {
-        WebDriverManager.chromedriver().setup();
-        return new ChromeDriver();
+        return driverFactory.get(browser);
     }
 }

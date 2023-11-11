@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.spring.ScenarioScope;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,9 +15,12 @@ public class SignupStepDefs {
 
     @Autowired
     private WebDriver driver;
+    @Value("${url}")
+    private String url;
+
     @Given("Pepito wants to have an account")
     public void pepito_wants_to_have_an_account() {
-        driver.get("http://www.google.com");
+        driver.get(url);
     }
 
     @When("he sends required information to get the account")
