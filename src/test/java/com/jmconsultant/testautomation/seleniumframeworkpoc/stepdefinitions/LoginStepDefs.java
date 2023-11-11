@@ -13,6 +13,6 @@ public class LoginStepDefs {
 
     @Given("Pepito wants to log in")
     public void pepito_wants_to_log_in() {
-        driver.get("http://www.google.com");
+        driver.get("https://www.mercadolibre.com.co/");
     }
 }
